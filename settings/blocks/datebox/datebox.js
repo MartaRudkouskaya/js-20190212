@@ -22,7 +22,7 @@ export class Datebox extends Block {
       value: '',
       required: true,
       type: 'date',
-      min: "1900-01-01",
+      min: '1900-01-01',
       max: `${dateToday.getYear}-${dateToday.getMonth}-${dateToday.getDate}`
     });
   }
