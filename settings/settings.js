@@ -8,7 +8,6 @@ import { SettingsMenu } from './blocks/settingsmenu/settingsmenu'
 import { Datebox } from './blocks/datebox/datebox'
 import { Galarey } from './blocks/galarey/galarey';
 import { Themes } from './blocks/themes/themes'
-
 import { Router } from './../libs/router';
 import { SecurityForm } from './views/security-form/security-form';
 import { PersonalDataForm } from './views/personal-data-form/personal-data-form';
@@ -44,5 +43,6 @@ window.addEventListener('DOMContentLoaded', () => {
   router.register('persondata', personalDataForm, true);
   router.register('security', securityFrom);
   router.register('theme', themeForm);
+  router.register('')
   router.start();
 });

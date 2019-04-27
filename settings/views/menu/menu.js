@@ -31,6 +31,10 @@ export class Menu extends View {
       text: 'Безопасность'
     });
     this.settingsMenu.addItem({
+      href: '../contacts/index.html',
+      text: 'Контакты'
+    });
+    this.settingsMenu.addItem({
       href: '#theme',
       text: 'Темы'
     });
