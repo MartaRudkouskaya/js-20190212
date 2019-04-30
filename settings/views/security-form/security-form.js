@@ -18,7 +18,7 @@ export class SecurityForm extends View {
     this.model = new User();
   }
 
-  onSubmit (form) {    
+  onSubmit (form) {
     let inputs = form.querySelectorAll('.textbox__input_required');
     for (let input of inputs) {
       let element = input.firstElementChild;
