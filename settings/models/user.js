@@ -15,7 +15,6 @@ export class User extends Model {
       newRequest['password'] = newPassword;
     }
 
-    console.log(JSON.stringify(newRequest));
     return this.request('POST', 'settings', JSON.stringify(newRequest));
   }
 }
