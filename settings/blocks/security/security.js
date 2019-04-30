@@ -45,6 +45,10 @@ export class Security extends Block {
     })
   }
 
+  onSubmit (form) {
+    console.log(form);
+  }
+
   render (el) {
     super.render(el);
     this.oldPassword.render(this.getElement('old-password'));
@@ -53,7 +57,7 @@ export class Security extends Block {
     this.submit.render(this.getElement('submit'));
     this.el.addEventListener('submit', event => {
       event.preventDefault();
-      console.log(this.oldPassword.value, this.newPassword.value, this.newPasswordRepeat.value);
+      this.onSubmit(this.el);
     });
   }
 }
